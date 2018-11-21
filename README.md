@@ -7,7 +7,7 @@ v. 2.7.1
 
 Based on Flexbox (CSS Flexible Box Layout Module), Gridlex is a very simple css grid system to quickly create modern layouts and submodules.
 
-The concept is simple: you need to wrap your `.col` in a `.grid`.
+The concept is simple: you need to wrap your `.col` in a `.in_grid`.
 
 ### What can we expect?
 - Basically each column is the same width as every other cell in the grid.
@@ -51,7 +51,7 @@ update the $gl- vars:
     </tr>
     <tr>
         <td><code>$gl-gridName:</code></td>
-        <td><code>grid</code></td>
+        <td><code>in_grid</code></td>
     </tr>
     <tr>
         <td><code>$gl-colName:</code></td>
@@ -93,23 +93,23 @@ bower install gridlex --save
 
 
 ### 3 ways to use Gridlex
-**1- The basic. Just add a class `.grid-*` (from -1 to -12)**
+**1- The basic. Just add a class `.in_grid-*` (from -1 to -12)**
 ```html
-<div class="grid-1">
+<div class="in_grid-1">
 	<div class="col">...</div>
 </div>
 ```
 
 **2- The precise. Compose cell by cell (with class like `.col-*`)**
 ```html
-<div class="grid">
+<div class="in_grid">
 	<div class="col-12">...</div>
 </div>
 ```
 
-**3- The automatic. Just add number of cells you want in the grid (`.grid > .col`)**
+**3- The automatic. Just add number of cells you want in the grid (`.in_grid > .col`)**
 ```html
-<div class="grid">
+<div class="in_grid">
 		<div class="col">...</div>
 		<div class="col">...</div>
 </div>
